@@ -11,10 +11,10 @@ var FakeLocation = /** @class */ (function (_super) {
     function FakeLocation() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    FakeLocation.prototype.check = function (config) { return core.cordova(this, "check", {}, arguments); };
+    FakeLocation.prototype.check = function (config) { return core.cordova(this, "check", { "callbackOrder": "reverse" }, arguments); };
     FakeLocation.pluginName = "FakeLocation";
     FakeLocation.plugin = "cordova-plugin-fakelocation";
-    FakeLocation.pluginRef = "FakeLocation";
+    FakeLocation.pluginRef = "fakeLocation";
     FakeLocation.repo = "https://github.com/gaara64bit/cordova-plugin-fakelocation.git";
     FakeLocation.platforms = ["Android"];
     FakeLocation.decorators = [
